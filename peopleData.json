@@ -1,0 +1,31 @@
+{
+  "MingLee": {
+    "name": "Ming Lee",
+    "age" : "15",
+    "city" : "Shanghai",
+    "photo": "",
+    "major": "Computer Science"
+  },
+  "AlbertWhisman": {
+	    "name": "Albert Whisman",
+	    "age" : "22",
+	    "city" : "Corvallis",
+	    "photo": "",
+	    "major": "Civil Engineering"
+	  },
+  "ElizabethSherry": {
+		    "name": "Elizabeth Sherry",
+		    "age" : "17",
+		    "city" : "London",
+		    "photo": "",
+		    "major": "Computer Science"
+		  },
+  "LouisDeVanilla": {
+			    "name": "Louis De Vanilla",
+			    "age" : "19",
+			    "city" : "Corvallis",
+			    "photo": "",
+			    "major": "Business Administration"
+			  },
+
+}
