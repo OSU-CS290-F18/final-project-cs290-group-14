@@ -77,15 +77,18 @@ body{
 }
 
 .student {
+position:absolute; 
   display: flex;
   vertical-align: middle;
   height: 450px;
-  width: 450px;
+  width: 650px;
   margin: 10px;
   padding: 10px;
+  left:80px;
   border: 1px solid #ccc;
   background-color: 	#C0C0C0;
   border-radius: 3px;
+  border-style:solid;
 }
 
 .student-contents {
@@ -94,32 +97,23 @@ body{
   border: 1px solid #ccc;
   background-color: #fff;
   text-align: center;
+  padding-top:255px;
 }
-
-.student-major-container {
- margin: 10px;
-  padding: 120px;
-  border: 1px solid #ccc;
-  background-color: #fff;
-  text-align: center;
-}
-
-
-
 
 
 .student-name {
+   position: static;
   display: inline-block;
   text-decoration:none;
-  font-size: 80%;
   padding: 3px;
-  margin: 3px 8px;
+  margin: 1px 5px;
+  width:250px;
+  height:25px;
   font-weight:bold;
-  font-family: font-family: 'Lora', serif;
+  font-family: 'Lora', serif;
   color: #FFFFFF;
   font-size: 20px;
   border: 1px solid #ababab;
-  font-size: 20px;
   border-radius: 3px;
   background: #000000;
 }
@@ -132,11 +126,20 @@ body{
   color: #FF0000;
   text-decoration:none;
 }
-
+.student-img-container{
+}
 .student-img-container img {
     display: inline-block;
   max-height: 240px;
   max-width: 300px;
+    display: block;
+      border-style: solid;
+  border-top-width: 5px;
+  border-right-width: 5px;
+  border-bottom-width: 5px;
+  border-left-width: 5px;
+  left:180px;
+  bottom: 190px;
 }
 
 .search-bar{
