@@ -1,0 +1,148 @@
+header{
+  position: relative;
+  width: 100%;
+  height: 18%;
+  display: block;
+  text-align: center;
+  background-color: #000000c9;
+}
+
+.site-description{
+  position: relative;
+  margin-top: 5px;
+  font-family: font-family: 'Lora', serif;;
+  font-size: 20px;
+  color: white;
+}
+.header-title{
+  margin-top:0;
+  font-family: font-family: 'Lora', serif;
+  color: white;
+  margin-bottom: 5px;
+  font-size: 80px;
+}
+
+body{
+  width: 100%;
+  height: 100%;
+  margin:0;
+}
+
+.home-page-image{
+  height:100%;
+  width:100%;
+}
+
+.home-page-image img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  background-image: url("https://i.pinimg.com/originals/27/8a/df/278adfb7b82fdc9101bdefc94faa8eca.jpg");
+}
+
+.home-page-container{
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 82%;
+}
+
+.link-note{
+  position: relative;
+  display: flex;
+  width: 20%;
+  height: 350px;
+  margin: auto;
+  margin-top: 7%;
+  font-size: 30px;
+  color: black;
+  background-color: #f1ee7b;
+  border-color: #f1ee7b;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 10px 15px #00000087;
+}
+
+.page-change-button{
+  position: relative;
+  width: auto;
+  height: auto;
+  margin: auto;
+  font-size: 30px;
+  font-family: 'Gloria Hallelujah', cursive;
+  color: black;
+  background-color: #f1ee7b;
+  border-color: #00000000;
+}
+
+.student {
+  display: flex;
+  vertical-align: middle;
+  height: 450px;
+  width: 450px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: 	#C0C0C0;
+  border-radius: 3px;
+}
+
+.student-contents {
+ margin: 10px;
+  padding: 180px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  text-align: center;
+}
+
+.student-major-container {
+ margin: 10px;
+  padding: 120px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  text-align: center;
+}
+
+
+
+
+
+.student-name {
+  display: inline-block;
+  text-decoration:none;
+  font-size: 80%;
+  padding: 3px;
+  margin: 3px 8px;
+  font-weight:bold;
+  font-family: font-family: 'Lora', serif;
+  color: #FFFFFF;
+  font-size: 20px;
+  border: 1px solid #ababab;
+  font-size: 20px;
+  border-radius: 3px;
+  background: #000000;
+}
+
+.student-major{
+  display: inline-block;
+  font-family: 'Lora', serif;;
+  font-size: 15px;
+  font-weight:bold;
+  color: #FF0000;
+  text-decoration:none;
+}
+
+.student-img-container img {
+    display: inline-block;
+  max-height: 240px;
+  max-width: 300px;
+}
+
+.search-bar{
+  position: relative;
+  height: 105%;
+  width: auto;
+  color: white;
+  background-color: #00000087;
+}
