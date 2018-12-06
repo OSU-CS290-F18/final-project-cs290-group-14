@@ -23,7 +23,9 @@ app.get('*', function (req, res) {
   res.status(404).render('404Page');
 });
 
-app.get('/students/:student', function(req, res, next) {
+
+
+app.get('/resumes/:student', function(req, res, next) {
 	  var st = req.params.student.toLowerCase();;
 	  	if (studentData[st]) {
 	    res.render("partials/studentInfo", studentData[st]);
@@ -32,6 +34,10 @@ app.get('/students/:student', function(req, res, next) {
 	  	else {
 	    next();
 	  }
+});
+
+app.get('/resumes', function(req, res){
+  res.status(200).render('studentPage', studentData);
 });
 
 

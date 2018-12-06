@@ -1,3 +1,5 @@
+
+
 function insertNewStudent(name,age,photo,major,bio,resume) {
 	var studentData= {
 			name:name,
