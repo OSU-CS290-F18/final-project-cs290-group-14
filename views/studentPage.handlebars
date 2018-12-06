@@ -1,0 +1,16 @@
+<main class="content">
+
+  <div class="title-container">
+    <h1>Student Information</h1>
+  </div>
+
+  <section id="students">
+
+    {{#each this}}
+	{{#if name}}
+    {{>studentInfo}}
+  {{/if}}
+    {{/each}}
+
+        </section>
+        </main>
