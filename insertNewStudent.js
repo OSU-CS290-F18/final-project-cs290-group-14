@@ -1,21 +1,4 @@
 
-
-function insertNewStudent(name,age,photo,major,bio,resume) {
-	var studentData= {
-			name:name,
-			age:age,
-			photo:photo,
-			major:major,
-			bio:bio,
-      resume:resume
-	};
-	console.log("studentData",studentData);
-var studentHTML = Handlebars.templates.studentInfo(studentData);
-var insertStudentContainer = document.getElementById('students');
-insertStudentContainer.insertAdjacentHTML('beforeend', postHTML);
-}
-var allStudents = [];
-
 function handleModalAcceptClick() {
 
   var name = document.getElementById('user-name').value.trim();
@@ -28,15 +11,40 @@ function handleModalAcceptClick() {
   if (!name || !age || !photo || !major || !bio || !resume) {
     alert("You must fill in all of your information to create a post.");
   } else {
+	 var postRequest = new XMLHttpRequest();
+    var requestURL = 'getPersonIdFromURL() ;
+    postRequest.open('POST', requestURL);
 
-    allStudents.push({
-	name:name,
+    var requestBody = JSON.stringify({
+     name:name,
 	age:age,
 	photo:photo,
 	major:major,
 	bio:bio,
       	resume:resume
+  });
+    postRequest.addEventListener('load', function (event) {
+      if (event.target.status === 200) {
+        var studentTemp = Handlebars.templates.studentInfo;
+        var newstudentHTML = studentTemp({
+        name:name,
+	age:age,
+	photo:photo,
+	major:major,
+	bio:bio,
+      	resume:resume
+        });
+        var insertStudentContainer = document.querySelector('.students');
+        insertStudentContainer.insertAdjacentHTML('beforeend', newstudentHTML);
+      } else {
+        alert("Error storing student data: " + event.target.response);
+      }
     });
+
+    postRequest.setRequestHeader('Content-Type', 'application/json');
+    postRequest.send(requestBody);
+
+    hideModal();
 
   }
 
