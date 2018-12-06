@@ -4,28 +4,32 @@
     "age" : "15",
     "city" : "Shanghai",
     "photo": "",
-    "major": "Computer Science"
+    "major": "Computer Science",
+    "resume" : "./pdf/SampleResume1.pdf"
   },
   "AlbertWhisman": {
 	    "name": "Albert Whisman",
 	    "age" : "22",
 	    "city" : "Corvallis",
 	    "photo": "",
-	    "major": "Civil Engineering"
+	    "major": "Civil Engineering",
+	      "resume" : "./pdf/SampleResume2.pdf"
 	  },
   "ElizabethSherry": {
 		    "name": "Elizabeth Sherry",
 		    "age" : "17",
 		    "city" : "London",
 		    "photo": "",
-		    "major": "Computer Science"
+		    "major": "Computer Science",
+	  	    "resume" : "./pdf/SampleResume3.pdf"
 		  },
   "LouisDeVanilla": {
 			    "name": "Louis De Vanilla",
 			    "age" : "19",
 			    "city" : "Corvallis",
 			    "photo": "",
-			    "major": "Business Administration"
+			    "major": "Business Administration",
+	   		   "resume" : "./pdf/SampleResume4.pdf"
 			  },
 
 }
