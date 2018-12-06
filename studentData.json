@@ -2,14 +2,14 @@
   "MingLee": {
     "name": "Ming Lee",
     "age" : "15",
-    "photo": "",
+    "photo": "http://math.ucr.edu/home/baez/physics/General/BlueSky/bluehaze.jpg",
     "major": "Computer Science",
     "resume" : "./pdf/SampleResume1.pdf"
   },
   "AlbertWhisman": {
 	    "name": "Albert Whisman",
 	    "age" : "22",
-	    "photo": "",
+	    "photo": "https://cdn3.bigcommerce.com/s-nadnq/product_images/uploaded_images/20.jpg",
 	    "major": "Civil Engineering",
 	      "resume" : "./pdf/SampleResume2.pdf"
 	  },
