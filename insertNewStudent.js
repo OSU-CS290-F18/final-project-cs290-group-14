@@ -3,7 +3,7 @@
 function getPersonIdFromURL() {
   var path = window.location.pathname;
   var pathParts = path.split('/');
-  if (pathParts[1] === "people") {
+  if (pathParts[1] === "resumes") {
     return pathParts[2];
   } else {
     return null;
