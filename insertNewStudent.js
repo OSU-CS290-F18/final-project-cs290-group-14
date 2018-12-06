@@ -1,5 +1,5 @@
 
-//use /people/* to show people
+//use /resumes/* to show individual person
 function getPersonIdFromURL() {
   var path = window.location.pathname;
   var pathParts = path.split('/');
