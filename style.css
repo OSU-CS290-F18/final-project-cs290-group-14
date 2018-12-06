@@ -12,7 +12,7 @@ header{
 .site-description{
   position: relative;
   margin-top: 5px;
-  font-family: font-family: 'Lora', serif;;
+  font-family: font-family: 'Lora', serif;
   font-size: 20px;
   color: white;
 }
@@ -38,7 +38,7 @@ body{
 .home-page-image img{
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 107%;
   background-color: #000000;
   background-image: url("https://i.pinimg.com/originals/27/8a/df/278adfb7b82fdc9101bdefc94faa8eca.jpg");
 }
@@ -82,8 +82,14 @@ body{
 
 .search-bar{
   position: relative;
-  height: 105%;
+  height: auto;
   width: auto;
   color: white;
   background-color: #00000087;
+}
+
+
+.make-page-label{
+  display: block;
+  font-family: font-family: 'Lora', serif;
 }
