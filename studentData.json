@@ -16,14 +16,14 @@
   "ElizabethSherry": {
 		    "name": "Elizabeth Sherry",
 		    "age" : "17",
-		    "photo": "",
+		    "photo": "https://cdn5.vectorstock.com/i/1000x1000/90/64/english-knight-fighting-dragon-england-flag-shield-vector-1909064.jpg",
 		    "major": "Computer Science",
 	  	    "resume" : "./pdf/SampleResume3.pdf"
 		  },
   "LouisDeVanilla": {
 			    "name": "Louis De Vanilla",
 			    "age" : "19",
-			    "photo": "",
+			    "photo": "https://cf.ltkcdn.net/feng-shui/images/std/227392-621x450-elementalyinyang.jpg",
 			    "major": "Business Administration",
 	   		   "resume" : "./pdf/SampleResume4.pdf"
 			  },
