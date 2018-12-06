@@ -2,54 +2,46 @@ var path = require('path');
 var express = require('express');
 var exphbs = require('express-handlebars');
 
-var peopleData = require('./peopleData');
+var postData = require('./postData');
 
 var app = express();
+var port = process.env.PORT || 3000;
 
-var port = process.env.PORT || 8000;
 
-app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
+app.engine('handlebars',exphbs({defaultLayout:'main'}));
 app.set('view engine', 'handlebars');
 
 app.use(express.static('public'));
 
-app.get('/people', function (req, res, next) {
-  res.status(200).sendFile(__dirname + '/public/people.html');
+
+app.get('/', function(req, res, next) {
+	  res.status(200).render('index', {});
+	  console.log("Index page");
+	});
+
+app.get('/students', function(req, res)  {
+	res.status(200).render('studentPage', postData);
+    console.log("student page");
 });
 
-// var availablePeople = [
-//   'luke',
-//   'leia',
-//   'rey',
-//   'finn',
-//   'r2d2'
-// ];
-
-app.get('/people/:person', function (req, res, next) {
-  var person = req.params.person.toLowerCase();
-  if (peopleData[person]) {
-    res.render('photoPage', peopleData[person]);
-  } else {
-    next();
-  }
-
-  // if (availablePeople.indexOf(person) >= 0) {
-  //   res.status(200).sendFile(
-  //     __dirname + '/public/people/' + person + '.html'
-  //   );
-  // } else {
-  //   next();
-  // }
+app.get('/students/:student', function(req, res, next) {
+	  var st = req.params.student.toLowerCase();;
+	  	if (studentData[st]) {
+	    res.render("partials/studentInfo", studentData[st]);
+		  console.log("single student page");
+	  } 
+	  	else {
+	    next();
+	  }
 });
 
 app.get("*", function (req, res, next) {
-  // res.status(404).sendFile(__dirname + '/public/404.html');
-  res.status(404).render('404', {});
-});
+	  res.status(404).render('404', {});
+	  console.log("404 not found");
+	});
 
-app.listen(port, function (err) {
-  if (err) {
-    throw err;
-  }
-  console.log("== Server listening on port 8000");
+
+
+app.listen(port, function () {
+  console.log("== Server is listening on port", port);
 });
