@@ -2,7 +2,7 @@ var path = require('path');
 var express = require('express');
 var exphbs = require('express-handlebars');
 
-var postData = require('./postData');
+var studentData = require('./studentData');
 
 var app = express();
 var port = process.env.PORT || 3000;
@@ -20,7 +20,7 @@ app.get('/', function(req, res, next) {
 	});
 
 app.get('/students', function(req, res)  {
-	res.status(200).render('studentPage', postData);
+	res.status(200).render('studentPage', studentData);
     console.log("student page");
 });
 
