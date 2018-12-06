@@ -1,31 +1,3 @@
-var path = require('path');
-var express = require('express');
-<<<<<<< HEAD
-var app = express();
-var port = process.env.PORT || 3000;
-var exphbs = require('express-handlebars');
-var bodyParser = require('body-parser');
-app.use(bodyParser.json());
-app.use(express.static('public'));
-
-app.engine('handlebars', exphbs({deafaultLayout: 'main'}));
-app.set('view engine', 'handlebars');
-
-
-
-app.get('/',function(req,res){
-  res.status(200).render('home_page')
-});
-
-app.get('/addresume',function(req,res){
-  res.status(200).render('makeresume');
-});
-
-app.get('*', function (req, res) {
-  res.status(404).render('404Page');
-});
-
-=======
 var exphbs = require('express-handlebars');
 
 var studentData = require('./studentData');
@@ -48,6 +20,10 @@ app.get('/', function(req, res, next) {
 app.get('/students', function(req, res)  {
 	res.status(200).render('studentPage', studentData);
     console.log("student page");
+});
+
+app.get('/addresume',function(req,res){
+  res.status(200).render('makeresume');
 });
 
 app.get('/students/:student', function(req, res, next) {
