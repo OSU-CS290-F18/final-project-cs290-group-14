@@ -10,7 +10,7 @@ function insertNewStudent(name,age,photo,major,bio,resume) {
 	console.log("studentData",studentData);
 var studentHTML = Handlebars.templates.studentInfo(studentData);
 var insertPostContainer = document.getElementById('students');
-insertPostContainer.insertAdjacentHTML('beforeend', postHTML);
+insertNewStudent.insertAdjacentHTML('beforeend', postHTML);
 }
 var allStudents = [];
 
