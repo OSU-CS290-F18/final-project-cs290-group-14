@@ -87,8 +87,94 @@ body{
   background-color: #00000087;
 }
 
-
+.user-get-info-container{
+  position: relative;
+  background-color: #f1ee7b;
+  color: black;
+  height: 500px;
+  width:auto;
+  margin-top: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-radius: 5px;
+  box-shadow: 10px 15px #00000087;
+}
 .make-page-label{
-  display: block;
-  font-family: font-family: 'Lora', serif;
+
+  position: relative;
+  color:black;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 30px;
+  margin: 2%;
+
+}
+
+
+#modal-accept{
+  position: relative;
+  width: 150px;
+  height: 40px;
+  margin-left: 42%;
+  border-radius: 8px;
+  background-color: #f1ee7b;
+  color: black;
+  font-size: 20px;
+  box-shadow: 10px 15px #00000087;
+}
+
+#Name{
+    position: relative;
+    width: 80%;
+    height: 5%;
+    border-radius: 5px;
+    background-color: #f1ee7b;
+    font-size: 20px;
+    margin-top: 30px;
+    border: 1px solid black;
+}
+
+#Age{
+  position: relative;
+  width: 80%;
+  height: 5%;
+  border-radius: 5px;
+  background-color: #f1ee7b;
+  font-size: 20px;
+  margin-left: 30px;
+  margin-top: 30px;
+  border: 1px solid black;
+}
+
+#bio{
+  position: relative;
+  width: 45%;
+  height: 5%;
+  border-radius: 5px;
+  background-color: #f1ee7b;
+  font-size: 20px;
+  margin-top: 30px;
+  border: 1px solid black;
+}
+
+#prof-pic{
+  position: relative;
+  width: 45%;
+  height: 5%;
+  border-radius: 5px;
+  background-color: #f1ee7b;
+  font-size: 20px;
+  margin-left: 20px;
+  margin-top: 30px;
+  border: 1px solid black;
+}
+
+#choose-file{
+    position: relative;
+    color: black;
+    align-content: center;
+    font-size: 20px;
+    font-family: 'Gloria Hallelujah', cursive;
+    margin-right: 10px;
+    background-color: #f1ee7b;;
+
 }

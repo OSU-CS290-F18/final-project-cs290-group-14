@@ -44,5 +44,7 @@ function handleModalAcceptClick() {
 
 var modalAcceptButton = document.getElementById('modal-accept');
   if (modalAcceptButton) {
-    modalAcceptButton.addEventListener('click', handleModalAcceptClick);
+    modalAcceptButton.addEventListener('click', handleModalAcceptClick)
+
+		});
   }

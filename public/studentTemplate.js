@@ -5,9 +5,9 @@ templates['studentInfo'] = template({"compiler":[7,">= 4.0.0"],"main":function(c
 
   return "<div class=\"student\">\n <div class=\"student-contents\">\n     <div class=\"student-img-container\">\n    <img class=\"student-photo-img\" src=\""
     + alias4(((helper = (helper = helpers.photo || (depth0 != null ? depth0.photo : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"photo","hash":{},"data":data}) : helper)))
-    + "\" />\n  </div>\n    <div class=\"student-info-container\">\n              <a href=\"#\" class=\"student name\">"
+    + "\">\n  </div>\n    <div class=\"student-info-container\">\n              <a href=\"#\" class=\"student name\">"
     + alias4(((helper = (helper = helpers.name || (depth0 != null ? depth0.name : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"name","hash":{},"data":data}) : helper)))
-    + ",</a> <br><span class=\"student-age\">"
+    + "</a> <br><span class=\"student-age\">"
     + alias4(((helper = (helper = helpers.age || (depth0 != null ? depth0.age : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"age","hash":{},"data":data}) : helper)))
     + "</span></span> <span href=\"#\" class=\"student-major\">"
     + alias4(((helper = (helper = helpers.major || (depth0 != null ? depth0.major : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"major","hash":{},"data":data}) : helper)))
