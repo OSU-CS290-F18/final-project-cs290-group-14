@@ -55,7 +55,7 @@ function handleModalAcceptClick() {
     postRequest.setRequestHeader('Content-Type', 'application/json');
     postRequest.send(requestBody);
 
-    hideModal();
+  //  hideModal();
 
   }
 
