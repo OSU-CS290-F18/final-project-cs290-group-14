@@ -1,4 +1,15 @@
 
+
+function getPersonIdFromURL() {
+  var path = window.location.pathname;
+  var pathParts = path.split('/');
+  if (pathParts[1] === "people") {
+    return pathParts[2];
+  } else {
+    return null;
+  }
+}
+
 function handleModalAcceptClick() {
 
   var name = document.getElementById('user-name').value.trim();
@@ -12,7 +23,7 @@ function handleModalAcceptClick() {
     alert("You must fill in all of your information to create a post.");
   } else {
 	 var postRequest = new XMLHttpRequest();
-    var requestURL = 'getPersonIdFromURL() ;
+    var requestURL = getPersonIdFromURL() ;
     postRequest.open('POST', requestURL);
 
     var requestBody = JSON.stringify({
