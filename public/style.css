@@ -88,14 +88,15 @@ body{
 }
 
 .user-get-info-container{
+  display: block;
   position: relative;
   background-color: #f1ee7b;
   color: black;
   height: 500px;
-  width:auto;
-  margin-top: 10%;
-  margin-left: 10%;
-  margin-right: 10%;
+  width: 500px;
+  margin-top: 8%;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 5px;
   box-shadow: 10px 15px #00000087;
 }
@@ -114,7 +115,8 @@ body{
   position: relative;
   width: 150px;
   height: 40px;
-  margin-left: 42%;
+  margin-left: 45%;
+  margin-right: auto;
   border-radius: 8px;
   background-color: #f1ee7b;
   color: black;
@@ -124,25 +126,28 @@ body{
 
 #Name{
     position: relative;
-    width: 80%;
+    width: 45%;
     height: 5%;
     border-radius: 5px;
     background-color: #f1ee7b;
     font-size: 20px;
-    margin-top: 30px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: 20%;
     border: 1px solid black;
 }
 
 #Age{
   position: relative;
-  width: 80%;
+  width: 45%;
   height: 5%;
   border-radius: 5px;
   background-color: #f1ee7b;
   font-size: 20px;
   margin-left: 30px;
-  margin-top: 30px;
+  margin-top: 20px;
   border: 1px solid black;
+  margin-right: 25%;
 }
 
 #bio{
@@ -152,8 +157,10 @@ body{
   border-radius: 5px;
   background-color: #f1ee7b;
   font-size: 20px;
-  margin-top: 30px;
+  margin-top: 10px;
   border: 1px solid black;
+  margin-right: 25%;
+  margin-left: 25%;
 }
 
 #prof-pic{
@@ -164,8 +171,10 @@ body{
   background-color: #f1ee7b;
   font-size: 20px;
   margin-left: 20px;
-  margin-top: 30px;
+  margin-top: 10px;
   border: 1px solid black;
+  margin-right: 25%;
+  margin-left: 25%;
 }
 
 #choose-file{
@@ -176,5 +185,5 @@ body{
     font-family: 'Gloria Hallelujah', cursive;
     margin-right: 10px;
     background-color: #f1ee7b;;
-
+    margin-top: 10px;
 }
