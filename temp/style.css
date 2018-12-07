@@ -1,3 +1,5 @@
+
+
 header{
   position: relative;
   width: 100%;
@@ -10,7 +12,7 @@ header{
 .site-description{
   position: relative;
   margin-top: 5px;
-  font-family: font-family: 'Lora', serif;;
+  font-family: font-family: 'Lora', serif;
   font-size: 20px;
   color: white;
 }
@@ -36,13 +38,12 @@ body{
 .home-page-image img{
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 107%;
   background-color: #000000;
-  background-image: url("https://www.goodfreephotos.com/albums/sky-and-clouds/cloud-patterns-in-partly-cloudy-sky.jpg");
+  background-image: url("https://i.pinimg.com/originals/27/8a/df/278adfb7b82fdc9101bdefc94faa8eca.jpg");
 }
 
 .home-page-container{
-  position: absolute;
   display: flex;
   width: 100%;
   height: 82%;
@@ -76,83 +77,11 @@ body{
   border-color: #00000000;
 }
 
-.student {
-position:relative;
- display: inline-block;
-  vertical-align: top;
-  height: 300px;
-  width: 300px;
-  margin: 10px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-  border-style:solid;
-    background-color: #C0C0C0;
-  text-align: center;
-}
 
-.student-contents {
-   float:left;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-}
-
-
-.student-name {
-   position: static;
-  display: inline-block;
-  text-decoration:none;
-  padding: 3px;
-  margin: 1px 5px;
-  width:250px;
-  height:25px;
-  font-weight:bold;
-  font-family: 'Lora', serif;
-  color: #FFFFFF;
-  font-size: 20px;
-  border: 1px solid #ababab;
-  border-radius: 3px;
-  background: #000000;
-  text-align:center;
-}
-
-.student-major{
-  font-family: 'Lora', serif;;
-  font-size: 15px;
-  font-weight:bold;
-  color: #FF0000;
-  text-decoration:none;
-}
-.student-info-container {
-    top:100px;
-  width: 100%;
- margin: 10px;}
-
-.student-img-container img {
-  position:sticky;
-  max-height: 180px;
-      max-width: 280px;
-      display: block;
-      margin: 0 auto;
-      padding: 3px;
-}
-
-.back{
-  font-weight:bold;
-  font-family: 'Roboto', sans-serif;
-  font-size:15px;
-  color:#C0C0C0;
-  position:fixed;
-  left: 30px;
-  bottom: 30px;
-}
 
 .search-bar{
   position: relative;
-  height: 105%;
+  height: auto;
   width: auto;
   color: white;
   background-color: #00000087;
