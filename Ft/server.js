@@ -5,7 +5,6 @@ var exphbs = require('express-handlebars');
 var bodyParser = require('body-parser');
 var MongoClient = require('mongodb').MongoClient;
 var MongoClient = require('mongodb').MongoClient;
-var studentData = require('./studentData');
 var app = express();
 var mongoHost = process.env.MONGO_HOST || 'classmongo.engr.oregonstate.edu';
 var mongoPort = process.env.MONGO_PORT || '27017';
@@ -51,16 +50,6 @@ app.get('/studentPage',function(req,res){
 	    });
 	  });
 	});
-app.get('/studentPage/:student', function(req, res, next) {
-	  var st = req.params.student.toLowerCase();
-	  	if (studentData[st]) {
-	    res.render("partials/studentInfo", studentData[st]);
-		  console.log("single student page");
-	  }
-	  	else {
-	    next();
-	  }
-});
 
 app.get('*', function (req, res) {
 	  res.status(404).render('404');
