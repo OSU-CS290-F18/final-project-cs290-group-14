@@ -4,12 +4,13 @@ var express = require('express');
 var exphbs = require('express-handlebars');
 var bodyParser = require('body-parser');
 var studentData = require('./studentData');
-var methodOverride = require('method-override');
+var bodyParser = require('body-parser');
 
-app.use(bodyParser.json());
-app.use(express.static('public'));
+var app = express();
+var port = process.env.PORT || 3000;
 
-app.engine('handlebars', exphbs({defaultLayout: 'main'}));
+
+app.engine('handlebars', exphbs({defaultLayout: 'main' }));
 app.set('view engine', 'handlebars');
 
 app.use(bodyParser.json());
@@ -24,12 +25,25 @@ app.get('/addresume',function(req,res){
 });
 
 app.get('/studentPage',function(req,res){
-	  res.status(200).render('studentPage');
+	  res.status(200).render('studentPage', {
+		    student: studentData
+		  });
+		});
+
+/*app.get('/studentPage',function(req,res){
+	 var studentCollection = mongoDB.collection('student');
+	  studentCollection.find({}).toArray(function (err, studentDocs) {
+	    if (err) {
+	      res.status(500).send("Error connecting to Database");
+	    }
+	    res.status(200).render('studentPage', {
+	      student: studentDocs
+	    });
+	  });
 	});
-
-
-app.get('/students/:student', function(req, res, next) {
-	  var st = req.params.student.toLowerCase();;
+*/
+app.get('/studentPage/:student', function(req, res, next) {
+	  var st = req.params.student.toLowerCase();
 	  	if (studentData[st]) {
 	    res.render("partials/studentInfo", studentData[st]);
 		  console.log("single student page");
