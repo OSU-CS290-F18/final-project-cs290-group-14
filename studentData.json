@@ -1,6 +1,5 @@
-[
-   {
-	"personId" : "MingLee",
+{
+  "MingLee": {
     "name": "Ming Lee",
     "age" : "15",
     "photo": "http://math.ucr.edu/home/baez/physics/General/BlueSky/bluehaze.jpg",
@@ -8,8 +7,7 @@
     "bio":"I am Number 1",
     "resume" : "./pdf/SampleResume1.pdf"
   },
- {
-	  "personId" : "AlbertWhisman",
+  "AlbertWhisman": {
 	    "name": "Albert Whisman",
 	    "age" : "22",
 	    "photo": "https://cdn3.bigcommerce.com/s-nadnq/product_images/uploaded_images/20.jpg",
@@ -17,8 +15,7 @@
 	     "bio":"I am Number 2",
 	      "resume" : "./pdf/SampleResume2.pdf"
 	  },
-   {
-		  "personId" :"ElizabethSherry",
+  "ElizabethSherry": {
 		    "name": "Elizabeth Sherry",
 		    "age" : "17",
 		    "photo": "https://cdn5.vectorstock.com/i/1000x1000/90/64/english-knight-fighting-dragon-england-flag-shield-vector-1909064.jpg",
@@ -26,8 +23,7 @@
 	   	  "bio":"I am Number 3",
 	  	    "resume" : "./pdf/SampleResume3.pdf"
 		  },
-   {
-			  "personId" : "LouisDeVanilla",
+  "LouisDeVanilla": {
 			    "name": "Louis De Vanilla",
 			    "age" : "19",
 			    "photo": "https://cf.ltkcdn.net/feng-shui/images/std/227392-621x450-elementalyinyang.jpg",
@@ -35,5 +31,4 @@
 	   		  "bio":"I am Number 4",
 	   		   "resume" : "./pdf/SampleResume4.pdf"
 			  }
-
-]
+}

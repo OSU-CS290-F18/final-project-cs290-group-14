@@ -12,12 +12,12 @@ function getPersonIdFromURL() {
 
 function handleModalAcceptClick() {
 
-  var name = document.getElementById('user-name').value.trim();
-  var photo = document.getElementById('user-photo').value.trim();
-  var age = document.getElementById('user-age').value.trim();
-  var major = document.getElementById('user-major').value.trim();
-  var bio =  document.getElementById('user-bio').value.trim();
-  var resume = document.getElementById('user-resume');
+  var name = document.getElementById('name').value.trim();
+  var photo = document.getElementById('prof-pic').value.trim();
+  var age = document.getElementById('age').value.trim();
+  var major = document.getElementById('major').value.trim();
+  var bio =  document.getElementById('bio').value.trim();
+  var resume = document.getElementById('choose-file');
 
   if (!name || !age || !photo || !major || !bio || !resume) {
     alert("You must fill in all of your information to create a post.");
@@ -32,17 +32,17 @@ function handleModalAcceptClick() {
 	photo:photo,
 	major:major,
 	bio:bio,
-      	resume:resume
+    resume:resume
   });
     postRequest.addEventListener('load', function (event) {
       if (event.target.status === 200) {
         var studentTemp = Handlebars.templates.studentInfo;
         var newstudentHTML = studentTemp({
         name:name,
-	age:age,
-	photo:photo,
-	major:major,
-	bio:bio,
+        age:age,
+		photo:photo,
+		major:major,
+		bio:bio,
       	resume:resume
         });
         var insertStudentContainer = document.querySelector('.students');
@@ -64,5 +64,5 @@ function handleModalAcceptClick() {
 var modalAcceptButton = document.getElementById('modal-accept');
   if (modalAcceptButton) {
     modalAcceptButton.addEventListener('click', handleModalAcceptClick)
-
+    alert("Create your resume successfully!");
 		}
