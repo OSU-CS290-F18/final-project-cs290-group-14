@@ -7,7 +7,7 @@ var bodyParser = require('body-parser');
 app.use(bodyParser.json());
 app.use(express.static('public'));
 
-app.engine('handlebars', exphbs({deafaultLayout: 'main'}));
+app.engine('handlebars', exphbs({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
 
 
@@ -23,7 +23,7 @@ app.get('*', function (req, res) {
   res.status(404).render('404');
 });
 
-app.get('/students', function(req, res, next) {
+app.get('/students/:student', function(req, res, next) {
 	  var st = req.params.student.toLowerCase();;
 	  	if (studentData[st]) {
 	    res.render("partials/studentInfo", studentData[st]);
