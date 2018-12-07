@@ -1,13 +1,13 @@
-<main class="content">
-   <div class="title-container">
-    <h1>Resume list</h1>
-  </div>
-   <section id="students">
+   <header>
+      <div class = "header-info-container">
+          <h1 class = "header-title">Resume Info</a></h1>
+          <h2 class = "site-description">Here are current student resumes.</h2>
+      </div>
+    </header>
  
-     {{#each this}}
- 	{{#if name}}
-     {{>studentInfo}}
-  {{/if}}
+ <section id="students">
+ 
+    {{#each this}}
+    {{>studentInfo}}
     {{/each}}
          </section>
-        </main>
