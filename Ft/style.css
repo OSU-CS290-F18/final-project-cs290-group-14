@@ -1,0 +1,88 @@
+
+
+header{
+  position: relative;
+  width: 100%;
+  height: 18%;
+  display: block;
+  text-align: center;
+  background-color: #000000c9;
+}
+
+.site-description{
+  position: relative;
+  margin-top: 5px;
+  font-family: font-family: 'Lora', serif;
+  font-size: 20px;
+  color: white;
+}
+.header-title{
+  margin-top:0;
+  font-family: font-family: 'Lora', serif;
+  color: white;
+  margin-bottom: 5px;
+  font-size: 80px;
+}
+
+body{
+  width: 100%;
+  height: 100%;
+  margin:0;
+}
+
+.home-page-image{
+  height:100%;
+  width:100%;
+}
+
+.home-page-image img{
+  position: absolute;
+  width: 100%;
+  height: 107%;
+  background-color: #000000;
+  background-image: url("https://i.pinimg.com/originals/27/8a/df/278adfb7b82fdc9101bdefc94faa8eca.jpg");
+}
+
+.home-page-container{
+  display: flex;
+  width: 100%;
+  height: 82%;
+}
+
+.link-note{
+  position: relative;
+  display: flex;
+  width: 20%;
+  height: 350px;
+  margin: auto;
+  margin-top: 7%;
+  font-size: 30px;
+  color: black;
+  background-color: #f1ee7b;
+  border-color: #f1ee7b;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 10px 15px #00000087;
+}
+
+.page-change-button{
+  position: relative;
+  width: auto;
+  height: auto;
+  margin: auto;
+  font-size: 30px;
+  font-family: 'Gloria Hallelujah', cursive;
+  color: black;
+  background-color: #f1ee7b;
+  border-color: #00000000;
+}
+
+
+
+.search-bar{
+  position: relative;
+  height: auto;
+  width: auto;
+  color: white;
+  background-color: #00000087;
+}
